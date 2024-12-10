@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:context=".register.RegisterActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/character_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_back"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_extrabold"
+                android:text="Cadastro de Usuário"
+                android:textColor="@color/blueDark"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/emailInputRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:padding="10dp"
+                android:background="@drawable/shape_input"
+                android:fontFamily="@font/poppins_semibold"
+                android:inputType="textEmailAddress"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="50dp" />
+
+            <EditText
+                android:id="@+id/passwordInputRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Senha"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:background="@drawable/shape_input"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_below="@id/emailInputRegister"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/confirmPasswordInputRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirmar Senha"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:background="@drawable/shape_input"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_below="@id/passwordInputRegister"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar"
+                android:padding="10dp"
+                android:backgroundTint="@color/blueDark"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_below="@id/confirmPasswordInputRegister"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:id="@+id/loginRedirectButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Já tem uma conta? Faça login"
+                android:onClick="goToLoginScreen"
+                android:padding="10dp"
+                android:backgroundTint="@color/blueDark"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_below="@id/registerButton"
+                android:layout_marginTop="20dp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
